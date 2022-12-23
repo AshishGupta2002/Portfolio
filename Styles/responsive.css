@@ -1,0 +1,282 @@
+@media(max-width:1000px) {
+    .navbar {
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        background-color: #111;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .navbar1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .home .max-width {
+        margin: 210px 0 0 25px;
+
+    }
+
+
+    section,
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media(max-width:850px){
+    .contact-content .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width:770px) {
+
+    section .section-heading {
+
+        font-size: 26px;
+
+
+    }
+
+    section .section-heading::after {
+
+        font-size: 20px;
+    }
+
+    .about-content .left img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-content .right .text {
+        font-size: 30px;
+    }
+
+    .about-content .right a {
+        font-size: 20px;
+    }
+
+    .service-content .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .skill-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 15px;
+    }
+
+
+
+}
+
+@media(max-width:650px) {
+    section .section-heading {
+
+        font-size: 24px;
+
+    }
+
+    section .section-heading::after {
+
+        font-size: 18px;
+    }
+
+
+    .home .max-width {
+        margin: 200px 0 0 25px;
+
+    }
+
+    .home .home-content .text-1 {
+        font-size: 24px;
+
+    }
+
+    .home .home-content .text-2 {
+        font-size: 55px;
+        font-weight: 600;
+
+    }
+
+    .home .home-content .text-3 {
+        font-size: 25px;
+
+    }
+
+    .home-content a {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+
+    .about-content .column {
+        width: 100%;
+    }
+
+    .about-content .left img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-content .right .text {
+        font-size: 30px;
+
+    }
+
+    .about-content .right a {
+        font-size: 18px;
+
+    }
+
+
+
+}
+
+@media(max-width:450px) {
+
+    section .section-heading {
+
+        font-size: 22px;
+
+    }
+
+    section .section-heading::after {
+
+        font-size: 18px;
+    }
+
+    .home .max-width {
+        margin: 180px 0 0 20px;
+
+    }
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+
+    }
+
+    .home .home-content .text-2 {
+        font-size: 40px;
+        font-weight: 600;
+
+    }
+
+    .home .home-content .text-3 {
+        font-size: 18px;
+
+    }
+
+    .home-content a {
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    .skill-content .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width:350px) {
+
+    section .section-heading {
+        font-size: 18px;
+
+    }
+
+    section .section-heading::after {
+        bottom: -6px;
+        font-size: 14px;
+
+    }
+
+    .home .max-width {
+        margin: 200px 0 0 5px;
+
+    }
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+
+    }
+
+    .home .home-content .text-2 {
+        font-size: 40px;
+        font-weight: 600;
+
+    }
+
+    .home .home-content .text-3 {
+        font-size: 20px;
+
+    }
+
+    .home-content a {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .about-content .left img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-content .right .text {
+        font-size: 25px;
+
+    }
+
+    .about-content .right a {
+        font-size: 16px;
+
+    }
+
+}
+
+
+@media(max-width:300px){
+    .about-content .left img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media(max-width:230px){
+    .about-content .left img {
+        width: 100px;
+        height: 100px;
+    }
+    
+
+}

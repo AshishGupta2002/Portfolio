@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root {
+    /* --main-bg-color: rgb(58, 2, 58); */
+    --main-bg-color:rgb(244, 136, 12);
+}
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif') no-repeat center;
+    z-index: 99999;
+    transition: all 0.3s ease;
+}
+
+body{
+    animation: fadein 1s;
+}
+
+@keyframes fadein{
+    from{opacity: 0;} to {opacity: 1;}
+}
+
+
+
+/* Navbar Styling */
+.navbar1 {
+    width: 100%;
+    background: #111;
+    top: 0;
+    left: 0;
+    padding: 8px 15px;
+    display: none;
+    position: sticky;
+
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    text-align: left;
+
+}
+
+.navbar1 .text {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar1 .text span {
+    color: var(--main-bg-color);
+}
+
+
+.navbar {
+    background: var(--main-bg-color);
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    white-space: nowrap; 
+    overflow-x: scroll;
+
+}
+
+.navbar h2{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 25px;
+    font-weight: 600;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.navbar h4{
+    color: #fff;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.6);
+ 
+}
+
+
+.navbar .logo img {
+    width: 150px;
+    height: 150px;
+    margin-top: 4rem;
+    border-radius: 6rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.navbar .menubar {
+    margin-bottom: 20px;
+}
+.navbar .menubar ol {
+    list-style: none;
+    margin: 5px;
+}
+
+.navbar .menubar ol li a {
+
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    transform: scale(1);
+
+}
+
+.navbar .menubar ol li a:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* CSS Menu Hover Underline Animation */
+
+.navbar .menubar ol li a::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    /* transform-origin: bottom right; */
+    transition: transform 0.35s linear;
+}
+
+.navbar .menubar ol li a:hover::after {
+    transform: scaleX(1);
+    /* transform-origin: bottom left; */
+}
+
+
+
+
+
+
+
+
+
+/* Similar Styling Code */
+
+section {
+    width: 80%;
+    margin-left: 20%;
+    padding: 1rem;
+    min-height: 500px;
+
+}
+
+.about .about-content,
+.services .service-content,
+.skills .skill-content,
+.contact .contact-content
+ {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+section .section-heading {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+
+}
+section .section-heading::before{
+    content: "";
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+} 
+section .section-heading::after{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    background: #fff;
+    font-size: 20px;
+    color: var(--main-bg-color);
+    transform: translateX(-50%);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home Section Styling */
+
+.home {
+    min-height: 700px;
+    /* background-image: url('../Images/3.jpg'); */
+    background-image: url('https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backface-visibility: hidden;
+    animation: slideBg 16s linear infinite 2s;
+    animation-timing-function: ease-in-out; */
+    
+
+}
+
+@keyframes slideBg{
+    0% {
+        background-image: url('../Images/1.jpg');
+    }
+    20% {
+        background-image: url('../Images/2.jpg');
+    }
+    40% {
+        background-image: url('../Images/3.jpg');
+    }
+    60% {
+        background-image: url('../Images/4.jpg');
+    }
+    80% {
+        background-image: url('../Images/5.jpg');
+    }
+}
+
+
+
+
+
+
+.home .max-width {
+    color: #fff;
+    margin: 250px 0 0 30px;
+
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+
+}
+
+.home .home-content .text-2 {
+    font-size: 70px;
+    font-weight: 600;
+
+}
+
+.home .home-content .text-3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.home .home-content .text-3 span {
+    color: var(--main-bg-color);
+
+}
+
+.home-content a {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: var(--main-bg-color);
+    color: #fff;
+    padding: 6px;
+    border: 3px solid var(--main-bg-color);
+    border-radius: 15px;
+    transition: color 0.3s ease;
+}
+
+.home-content a:hover {
+    background: none;
+    color: var(--main-bg-color);
+}
+
+
+
+/* About Section Styling */
+
+.about .section-heading::after{
+    content: "Who i am";
+} 
+
+.about-content .left img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.about-content .column {
+    width: calc(50% - 20px);
+    text-align: center;
+    padding: 8px;
+}
+
+.about-content .right {
+    text-align: justify;
+
+
+}
+
+.about-content .right .text {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+
+}
+
+.about-content .right .text span {
+    color: var(--main-bg-color);
+
+
+}
+
+.about-content .right p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+
+}
+
+.about-content .right a {
+    font-size: 25px;
+    font-weight: 500;
+    background-color: var(--main-bg-color);
+    color: #fff;
+    padding: 6px;
+    border: 3px solid var(--main-bg-color);
+    border-radius: 15px;
+    transition: color 0.3s ease;
+}
+
+.about-content .right a:hover {
+    background: none;
+    color: var(--main-bg-color);
+}
+
+
+
+/* Services Section Styling */
+
+.services .section-heading::after{
+    content: "What i provide";
+    background: rgb(239, 93, 93);
+}
+
+.services {
+    color: #fff;
+    background: rgb(239, 93, 93);
+}
+
+.service-content .card {
+    width: calc(33% - 10px);
+    background: rgb(57, 54, 54);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.service-content .card .box {
+    text-align: center;
+    margin: 25px;
+    transform: scale(a);
+    transition: all 0.3s ease;
+}
+
+.service-content .card .box .text {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.service-content .card:hover {
+    background: var(--main-bg-color);
+}
+
+.service-content .card .box:hover {
+    transform: scale(1.05);
+}
+
+
+/* Skills Section Styling */
+.skills .section-heading::after{
+    content: "what i know";
+} 
+.skills .skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.skill-content .card{
+    color: #fff;
+    text-align: center;
+    width: calc(33% - 10px);
+    background: rgb(57, 54, 54);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.8);
+    
+}
+.skill-content .card:hover{
+ 
+    background: var(--main-bg-color);
+    
+ 
+}
+.skill-content .card .skill-item{
+    margin: 5px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+.skill-content .card .skill-item:hover{
+
+    transform: scale(1.05);
+}
+.skill-content .card .skill-item img{
+    background: rgb(57, 54, 54);
+    border-radius: 50px;
+    padding: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+.skill-content .card .skill-item .skill-name{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 3px 5px;
+    margin: 3px 5px;
+}
+
+
+
+/* Contact Section Styling */
+.contact .section-heading::after{
+    content: "get in touch";
+    background: rgb(239, 93, 93);
+} 
+
+.contact{
+    background: rgb(239, 93, 93);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-content .card{
+    
+    background: rgb(57, 54, 54);
+    width: calc(33% - 10px);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-content .card .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-content .card .details{
+    margin-top: 20px;
+}
+.contact-content .card .row{
+   display: flex;
+   align-items: center;
+   margin: 10px;
+
+}
+
+.contact-content .card .row i{
+   color: var(--main-bg-color);
+   font-size: 25px;
+}
+.contact-content .card .row .info{
+    margin-left: 40px;
+    font-size: 20px;
+ }
+.contact-content .card .row .info .sub-title{
+    font-size: 15px;
+    color: #111
+ }
+
+
+/* Social Media Card */
+
+
+
+ .contact-content .card .accounts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   padding: 3px;
+}
+ .contact-content .card .accounts a{
+    transform: scale(1);
+    padding: 3px;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+ .contact-content .card .accounts a:hover{
+    transform: scale(1.3);
+}
+
+
+/* Form card */
+
+.contact-content .card form input,textarea{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 16px;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+.contact-content .card form .btn{
+    font-size: 25px;
+    font-weight: 500;
+    background-color: var(--main-bg-color);
+    color: #fff;
+    padding: 6px;
+    border: 3px solid var(--main-bg-color);
+    border-radius: 15px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-content .card form .btn:hover {
+    background: none;
+    color: var(--main-bg-color);
+}
+
+
+
+
+/* Footer Section Styling */
+
+footer {
+    width: 80%;
+    margin-left: 20%;
+    padding: 1rem;
+    text-align: center;
+    background: #111;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 20px;
+
+}
